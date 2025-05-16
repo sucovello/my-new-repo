@@ -13,7 +13,7 @@ hist_button = st.button('Histograma') # criar um botão
         
 if hist_button: # se o botão for clicado
             # escrever uma mensagem
-    st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
+    st.write('Conjunto de dados de anúncios de vendas de carros')
             
             # criar um histograma
     fig = px.histogram(df_vehicles, x="odometer")
@@ -24,9 +24,9 @@ if hist_button: # se o botão for clicado
 
 hist_check = st.checkbox('Gráfico de dispersão') 
         
-if hist_button: # se o botão for clicado
+if hist_check: # se o botão for clicado
             # escrever uma mensagem
-    st.write('Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
+    st.write('Gráfico de dispersão preço por ano')
             
             # criar um histograma
     fig = px.scatter(df_vehicles, x="year", y="price", title="Preço dos veículos por ano")
