@@ -29,7 +29,7 @@ if hist_check: # se o botão for clicado
     st.write('Gráfico de dispersão preço por ano')
             
             # criar um histograma
-    fig = px.scatter(df_vehicles, x="year", y="price", title="Preço dos veículos por ano")
+    fig = px.scatter(df_vehicles, x="model_year", y="price", title="Preço dos veículos por ano")
         
             # exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
